@@ -54,5 +54,7 @@
 		</table>
 
 	</form:form>
+	
+	<a href="display">View Students</a>
 </body>
 </html>

@@ -58,5 +58,14 @@ public class StudentController {
 		loadFormData(model);
 		return "index";
 	}
+	
+	@GetMapping("/display")
+	public String displayStudent(Model model) {
+		
+		List<StudentEntity> listOfStudents = studentRepo.findAll();
+		model.addAttribute("msg",listOfStudents);
+		
+		return "display";
+	}
 
 }
